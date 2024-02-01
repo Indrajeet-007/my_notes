@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646890206186",
+    "project_id": "flutter-fire-4cd4c",
+    "storage_bucket": "flutter-fire-4cd4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646890206186:android:1edbc50e439f0655f17893",
+        "android_client_info": {
+          "package_name": "com.gdsc.my_notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSbcpZjS4eh_kJDeFpyQ0YrinlLure8rU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,6 +12,10 @@ class _homepageState extends State<homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child: const Text('My Notes',style: TextStyle(color: Colors.white))),
+        backgroundColor : Colors.lightBlue,
+      ),
         body: Center(
             child: Padding(
       padding: const EdgeInsets.all(8.0),
@@ -28,9 +32,10 @@ class _homepageState extends State<homepage> {
                       Padding(
                         padding: const EdgeInsets.only(top: 80.0, bottom: 20.0),
                         child: Image.network(
-                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WeJdY6MhHtmzVwD7gnhirRyRngo3IU-XAw&usqp=CAU',
+                            'https://i.pinimg.com/originals/5e/ed/04/5eed044f1bbba3d8b19dfbefa598b520.jpg',
                             width: 100,
-                            height: 100),
+                            height: 100,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10.0, right: 10.0),
@@ -56,7 +61,7 @@ class _homepageState extends State<homepage> {
                             if (value == null ||
                                 value.isEmpty ||
                                 value.length < 7) {
-                              return 'Please enter some valid email';
+                              return 'Please enter some valid password';
                             }
                             return null;
                           },
@@ -70,14 +75,11 @@ class _homepageState extends State<homepage> {
                 child: ElevatedButton(
                     onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Processing Data'),backgroundColor: Colors.purple,padding: EdgeInsets.all(20),shape: StadiumBorder(),behavior: SnackBarBehavior.floating,elevation: 50,margin: EdgeInsets.all(50),
-                            ),
-                          );
+
                         }
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.purple,
+                      primary: Colors.lightBlue,
                       onPrimary: Colors.white,
                     ),
                     child: const Text('submit')),
